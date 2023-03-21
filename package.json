@@ -1,0 +1,47 @@
+{
+  "name": "cli-template",
+  "version": "1.0.0",
+  "description": "node cli template",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "cli": "./bin.js"
+  },
+  "scripts": {
+    "test": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
+    "clear": "rimraf dist",
+    "build": "pnpm run clear && tsc"
+  },
+  "keywords": [
+    "cli",
+    "template",
+    "yargs",
+    "typescript"
+  ],
+  "author": "mucen",
+  "license": "ISC",
+  "homepage": "https://github.com/mucen-l/cli-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mucen-l/cli-template"
+  },
+  "files": [
+    "dist",
+    "bin.js"
+  ],
+  "dependencies": {
+    "@types/ora": "^3.2.0",
+    "chalk": "4.1.2",
+    "ora": "^6.2.0",
+    "rimraf": "^4.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "yargs": "^17.7.1",
+    "zx": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "@types/yargs": "^17.0.22",
+    "formdata-node": "^5.0.0"
+  }
+}
