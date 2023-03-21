@@ -32,9 +32,9 @@ const cmd: CommandModule<{}, IOptions> = {
         'log-level': { choices: ['debug', 'info', 'warn', 'error'], group: 'debug:' },
         foo: { }
       })
-       // 用法示例
-      .usage('$0 <package>')
-      .usage('$0 <package> [--verbose] [-f=<path>]')
+      // 使用格式
+      .usage('Usage: hello [options]')
+      .usage('Usage: [-f=<path>] [--debug]')
       .example([
         // 具体用法示例
         ['$0 --file "~/config.json"', 'Use custom config'],
